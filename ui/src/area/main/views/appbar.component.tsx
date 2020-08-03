@@ -15,6 +15,7 @@ import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import GridOnIcon from '@material-ui/icons/GridOn';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
@@ -240,6 +241,15 @@ export function AppBarComponent() {
           text: 'Crear',
           icon: <NoteAddIcon />,
         },
+      ],
+    },
+    reportsPreliminaries: {
+      url: '/reports-preliminaries',
+      text: 'Reportes',
+      icon: <GridOnIcon />,
+      open: true,
+      childrenList: [
+        { url: '/user/create', text: 'Crear', icon: <NoteAddIcon /> },
       ],
     },
     user: {
