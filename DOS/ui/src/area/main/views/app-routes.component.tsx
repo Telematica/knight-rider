@@ -24,6 +24,7 @@ import { ObservationCYTGTableContainer } from '../../observations-cytg/views/obs
 import { ObservationCYTGFormContainer } from '../../observations-cytg/views/observation-cytg-form.container';
 import { ResultsReportCYTGTableContainer } from '../../results-report-cytg/views/results-report-cytg-table.container';
 import { ResultsReportCYTGFormContainer } from '../../results-report-cytg/views/results-report-cytg-form.container';
+import { ReportsPreliminariesContainer } from '../../reports/views/reports-preliminaries.container';
 
 type Props = {
   history: History,
@@ -148,6 +149,9 @@ export const AppRoutes = (props: Props) => {
         </Route>
         <Route exact path={['/results_report/create']}>
           <RForm />
+        </Route>
+        <Route exact path={['/reports-53']}>
+          <ReportsPreliminariesContainer />
         </Route>
         <Route path="*">
           <NotFound />

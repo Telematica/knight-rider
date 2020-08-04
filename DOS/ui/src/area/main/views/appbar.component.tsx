@@ -242,6 +242,12 @@ export function AppBarComponent() {
         },
       ],
     },
+    reports: {
+      url: '/reports-53',
+      text: 'Reportes',
+      icon: <ImageSearchIcon />,
+      open: true,
+    },
     user: {
       url: '/user/list',
       text: 'Usuarios',
